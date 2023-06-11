@@ -1,0 +1,103 @@
+body {
+    background: linear-gradient(to left, white 50%,
+            #b76fff 50%);
+
+}
+
+.font-anton {
+    font-family: 'Anton',
+        sans-serif;
+    font-weight: 400;
+}
+
+.font-roboto {
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.f-s {
+    font-size: 2rem;
+}
+
+.hamburger-menu {
+    margin: 2rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+.bar-top,
+.bar-middle,
+.bar-bottom {
+    height: 5px;
+    background: white;
+    border-radius: 5px;
+    margin: 3px 0;
+    transform-origin: left;
+    transition: all 0.5s;
+}
+
+.hamburger-menu:hover .bar-top {
+    transform: rotate(45deg);
+}
+
+.hamburger-menu:hover .bar-middle {
+    transform: translateX(1rem);
+    opacity: 0;
+}
+
+.hamburger-menu:hover .bar-bottom {
+    transform: rotate(-45deg);
+}
+
+.navbar-item {
+    color: black !important;
+    float: right;
+}
+
+.nav-link {
+    color: black !important;
+
+}
+
+.navbar-right {
+    float: right;
+    margin: 4rem;
+}
+
+.link {
+    font-size: 1.4rem;
+    color: black;
+    text-decoration: none;
+    margin: 4rem;
+}
+
+.link:hover {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: yellow;
+}
+
+.main-text {
+    color: #2f3e39;
+    font-size: 6rem;
+}
+
+@media screen and (max-width: 680px) {
+    .main-text {
+        color: #2f3e39;
+        font-size: 4rem;
+    }
+
+    .banana {
+        width: 300px;
+        
+    }
+}
